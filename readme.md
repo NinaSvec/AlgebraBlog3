@@ -35,4 +35,4 @@ $ php artisan serve
 After you start server type: http://localhost:8000 to your browser
 
 ## License:
-Algebra Blog is open-source software licensed under the <a href="https://opensource.org/licenses/MIT" rel="nofollow">MIT license.
+Algebra Blog is open-source software licensed under the <a href="https://opensource.org/licenses/MIT" rel="nofollow">MIT license.# AlgebraBlog3

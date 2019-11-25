@@ -12,3 +12,8 @@ php artisan route:list
 
 php artisan make:controller UserController -r
 php artisan config:cache
+
+php artisan migrate:refresh
+php artisan make:migration update_posts_table --table=posts
+
+composer require cviebrock/eloquent-sluggable

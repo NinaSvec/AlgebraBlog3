@@ -17,10 +17,12 @@ Route::get('/', function () {
 
 /* POSTS */
 Route::get('/posts', 'PostController@index')->name('posts.index');
+Route::get('/posts/create', 'PostController@create')->name('posts.create');
 Route::get('/posts/{id}', 'PostController@show')->name('posts.show');
+Route::post('/posts', 'PostController@store')->name('posts.store');
 
 
-/* USERS */
+/* USERS 
 
 // prikaži sve usere
 Route::get('/users', 'UserController@index')->name('users.index');
@@ -42,7 +44,8 @@ Route::patch('/users/{user}', 'UserController@update')->name('users.update');
 
 // obriši usera
 Route::delete('/users/{user}', 'UserController@destroy')->name('users.destroy');
+*/
 
-
+Route::resource('/users', 'UserController');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
